@@ -20,11 +20,11 @@ $(document).ready(function() {
 
         if ($(this).hasClass('active')) {
             $(this).parent().parent().next().next().slideUp()
-            $(this).html('See Comments')
+            $(this).html('See Replies')
             $(this).removeClass('active')
         }else {
             $(this).parent().parent().next().next().slideDown()
-            $(this).html('Hide Comments')
+            $(this).html('Hide Replies')
             $(this).addClass('active')
         }
 
@@ -46,19 +46,19 @@ $(document).ready(function() {
             <div>
                 <span>12 July 2022</span>
                 <a href="javascript:void(0)" class="upvote" data-vote="210">Upvote (210)</a>
-                <a class="create__comment" href="javascript:void(0)">Comment</a>
-                <a class="see_all_comments" href="javascript:void(0)">See comments</a>
+                <a class="create__comment" href="javascript:void(0)">Reply</a>
+                <a class="see_all_comments active" href="javascript:void(0)">Hide replies</a>
             </div>
         </div>
         <div class="create__comment">
             <div class="text">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment here"></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter your reply here"></textarea>
             </div>
             <div class="buttons">
-                <a href="javascript:void(0)">Add Comment</a>
+                <a href="javascript:void(0)">Reply</a>
             </div>
         </div>
-        <div style="display: none;" class="post__comments">
+        <div class="post__comments">
         </div>
     </div>
         `
